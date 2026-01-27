@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Dana Martinez Gonzalez | Engineering Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <nav class="nav">
+    <div class="nav-inner">
+      <div class="brand">Dana Martinez Gonzalez</div>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#research">Research</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container">
+    <header class="hero">
+      <h1>Dana Martinez Gonzalez</h1>
+      <p class="subtitle">Mechanical Engineering Student | Aerospace Minor</p>
+
+      <div class="buttons">
+        <a class="btn primary" href="resume.pdf" target="_blank" rel="noopener">Resume (PDF)</a>
+        <a class="btn" href="https://github.com/danapaolawork17-creator" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn" href="linkedin.com/in/dana-martinez-gonzalez-365b59273" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </header>
+
+    <section id="about" class="card">
+      <h2>About</h2>
+      <p>
+        I am a Mechanical Engineering student with an Aerospace minor focused on design, analysis, and testing.
+        I enjoy turning ideas into working hardware and tools through CAD, simulation, and clear documentation.
+      </p>
+    </section>
+
+    <section id="skills" class="card">
+      <h2>Skills</h2>
+      <div class="chips">
+        <span class="chip">SolidWorks</span>
+        <span class="chip">ANSYS</span>
+        <span class="chip">MATLAB</span>
+        <span class="chip">Python</span>
+        <span class="chip">CFD</span>
+        <span class="chip">FEA</span>
+        <span class="chip">GD and T</span>
+        <span class="chip">Design for manufacturability</span>
+        <span class="chip">Prototyping and testing</span>
+        <span class="chip">Technical writing</span>
+      </div>
+    </section>
+
+    <section id="research" class="card">
+      <h2>Research</h2>
+
+      <div class="item">
+        <div class="item-top">
+          <h3>Undergraduate Research Assistant, Drone Aerodynamics</h3>
+          <span class="tag">Spring 2026</span>
+        </div>
+
+        <p>
+          Supporting a drone aerodynamics research project focused on mechanical design improvements and repeatable
+          testing for a drilling capable UAV platform.
+        </p>
+
+        <ul>
+          <li>Improving landing gear and lowering mechanism durability and consistency</li>
+          <li>Reworking electronics layout for safer mounting, wiring access, and easier modifications</li>
+          <li>Helping develop repeatable lab testing methods for drilling performance</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="projects" class="card">
+      <h2>Projects</h2>
+
+      <div class="grid">
+        <article class="project">
+          <h3>Rotor Power Calculator</h3>
+          <p>
+            Python GUI tool to estimate rotorcraft power requirements in forward flight using analytical models
+            and interpolated performance data.
+          </p>
+          <p class="meta"><b>Tools:</b> Python, MATLAB, data analysis</p>
+          <div class="project-actions">
+            <a class="link" href="https://github.com/" target="_blank" rel="noopener">Repository</a>
+          </div>
+        </article>
+
+        <article class="project">
+          <h3>Airfoil Slicing Tool</h3>
+          <p>
+            Geometry processing tool to slice rotor airfoil sections for analysis and documentation.
+          </p>
+          <p class="meta"><b>Tools:</b> Python, CAD workflows</p>
+          <div class="project-actions">
+            <a class="link" href="https://github.com/" target="_blank" rel="noopener">Repository</a>
+          </div>
+        </article>
+
+        <article class="project">
+          <h3>Drilling Drone, Mechanism and Test Improvements</h3>
+          <p>
+            Improving landing gear lowering mechanism, wheel axle robustness, electronics packaging, and test
+            repeatability for drilling performance across soil conditions.
+          </p>
+          <p class="meta"><b>Tools:</b> CAD, 3D printing, testing, ArduPilot Mission Planner</p>
+          <div class="project-actions">
+            <a class="link" href="#research">Details</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="card">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:danapaolawork17@email.com">danapaolawork17@email.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/dana-martinez-gonzalez-365b59273/" target="_blank" rel="noopener">linkedin.com/in/dana-martinez-gonzalez-365b59273</a></p>
+    </section>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> Dana Martinez Gonzalez</p>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
