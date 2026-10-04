@@ -50,8 +50,8 @@
       </div>
 
       <figure class="hero-photo">
-        <!-- IMAGE: put your headshot at images/headshot.jpg -->
-        <img src="images/headshot.jpg" alt="Dana Martinez Gonzalez" data-fallback="DM">
+        <!-- IMAGE: put your headshot at headshot.jpg -->
+        <img src="headshot.jpg" alt="Dana Martinez Gonzalez" data-fallback="DM">
         <figcaption>
           <span class="dot"></span> Currently: NASA Pathways, Aerostructures
         </figcaption>
@@ -61,7 +61,7 @@
     <div class="wrap">
       <dl class="stats">
         <div><dt>NASA internships</dt><dd>3</dd></div>
-        <div><dt>Engineering projects</dt><dd>9</dd></div>
+        <div><dt>Engineering projects</dt><dd>7</dd></div>
         <div><dt>BS / MS expected</dt><dd>2027 / 2028</dd></div>
         <div><dt>GPA</dt><dd>3.52</dd></div>
       </dl>
@@ -88,7 +88,7 @@
           <p>My favorite work is where analysis meets real hardware: running a thermal chamber test, watching flight data come in from the control room, or figuring out why a part behaves differently than the model said it would. I'm skilled in CAD, simulation, and experimental validation, and I like turning engineering concepts into designs that actually get built.</p>
         </div>
         <ul class="about-facts reveal">
-          <li><span>Focus</span>Structures, test, propulsion</li>
+          <li><span>Focus</span>Structures, testing, hardware</li>
           <li><span>Currently</span>NASA Armstrong, Aerostructures Branch</li>
           <li><span>Education</span>BS + MS Mechanical Engineering, Fresno State</li>
           <li><span>Based in</span>California's Central Valley and Antelope Valley</li>
@@ -172,7 +172,6 @@
       <div class="filters" role="group" aria-label="Filter projects">
         <button class="filter is-active" data-filter="all" aria-pressed="true">All</button>
         <button class="filter" data-filter="nasa" aria-pressed="false">NASA</button>
-        <button class="filter" data-filter="research" aria-pressed="false">Research</button>
         <button class="filter" data-filter="competition" aria-pressed="false">Competition</button>
         <button class="filter" data-filter="school" aria-pressed="false">Coursework</button>
         <button class="filter" data-filter="industry" aria-pressed="false">Industry</button>
@@ -183,7 +182,7 @@
              set data-cat, and put the image in the images folder. -->
 
         <article class="project reveal" data-cat="nasa">
-          <div class="project-img"><img src="images/x59.jpg" alt="X-59 aircraft" data-fallback="X-59" loading="lazy"></div>
+          <div class="project-img"><img src="x59.JPG" alt="X-59 aircraft" data-fallback="X-59" loading="lazy"></div>
           <div class="project-body">
             <p class="project-tag">NASA Armstrong, 2026</p>
             <h3>X-59 QueSST structural analysis</h3>
@@ -193,7 +192,7 @@
         </article>
 
         <article class="project reveal" data-cat="nasa">
-          <div class="project-img"><img src="images/quantum-sensor.jpg" alt="Quantum sensor test setup" data-fallback="Sensor" loading="lazy"></div>
+          <div class="project-img"><img src="quantum-sensor.jpg" alt="Quantum sensor test setup" data-fallback="Sensor" loading="lazy"></div>
           <div class="project-body">
             <p class="project-tag">NASA Armstrong, 2026</p>
             <h3>Quantum sensor prototype testing</h3>
@@ -203,7 +202,7 @@
         </article>
 
         <article class="project reveal" data-cat="nasa">
-          <div class="project-img"><img src="images/rotor-calculator.jpg" alt="Rotor power calculator interface" data-fallback="Rotor" loading="lazy"></div>
+          <div class="project-img"><img src="rotor-calculator.jpg" alt="Rotor power calculator interface" data-fallback="Rotor" loading="lazy"></div>
           <div class="project-body">
             <p class="project-tag">NASA Ames, 2025</p>
             <h3>Rotor power calculator</h3>
@@ -213,7 +212,7 @@
         </article>
 
         <article class="project reveal" data-cat="nasa">
-          <div class="project-img"><img src="images/airfoil-slicing.jpg" alt="Rotor blade with airfoil slices in Rhino" data-fallback="Airfoil" loading="lazy"></div>
+          <div class="project-img"><img src="airfoil-slicing.jpg" alt="Rotor blade with airfoil slices in Rhino" data-fallback="Airfoil" loading="lazy"></div>
           <div class="project-body">
             <p class="project-tag">NASA Ames, 2025</p>
             <h3>Airfoil slicing tool</h3>
@@ -222,28 +221,10 @@
           </div>
         </article>
 
-        <article class="project reveal" data-cat="competition">
-          <div class="project-img"><img src="images/rocket-engine.jpg" alt="Liquid rocket engine CAD model" data-fallback="Engine" loading="lazy"></div>
-          <div class="project-body">
-            <p class="project-tag">NASA Student Launch, 2026 to present</p>
-            <h3>Liquid bipropellant rocket engine</h3>
-            <p>Propulsion calculations and SolidWorks modeling for an N₂O/IPA engine built on the Mojave Sphinx framework, plus manufacturing and static fire prep.</p>
-            <ul class="tools"><li>Propulsion</li><li>SolidWorks</li><li>Static fire</li></ul>
-          </div>
-        </article>
 
-        <article class="project reveal" data-cat="research">
-          <div class="project-img"><img src="images/drilling-uav.jpg" alt="Multi-rotor soil drilling UAV" data-fallback="UAV" loading="lazy"></div>
-          <div class="project-body">
-            <p class="project-tag">Fresno State research, 2026 to present</p>
-            <h3>Soil drilling UAV aerodynamics</h3>
-            <p>Leading aerodynamic analysis of multi-rotor configurations for a drilling drone, comparing stability, thrust distribution, and efficiency.</p>
-            <ul class="tools"><li>MATLAB</li><li>SolidWorks</li><li>Test planning</li></ul>
-          </div>
-        </article>
 
         <article class="project reveal" data-cat="competition">
-          <div class="project-img"><img src="images/rov.jpg" alt="MATE ROV with six thrusters" data-fallback="ROV" loading="lazy"></div>
+          <div class="project-img"><img src="rov.png" alt="MATE ROV with six thrusters" data-fallback="ROV" loading="lazy"></div>
           <div class="project-body">
             <p class="project-tag">MATE ROV, 2025 to present</p>
             <h3>ROV chassis and propulsion</h3>
@@ -253,7 +234,7 @@
         </article>
 
         <article class="project reveal" data-cat="school">
-          <div class="project-img"><img src="images/engine-mount.jpg" alt="Engine mount bracket FEA" data-fallback="Bracket" loading="lazy"></div>
+          <div class="project-img"><img src="engine-mount.png" alt="Engine mount bracket FEA" data-fallback="Bracket" loading="lazy"></div>
           <div class="project-body">
             <p class="project-tag">Coursework, 2026</p>
             <h3>Engine mount bracket analysis</h3>
@@ -263,7 +244,7 @@
         </article>
 
         <article class="project reveal" data-cat="industry">
-          <div class="project-img"><img src="images/packaging.jpg" alt="Packaging dieline drawing" data-fallback="Packaging" loading="lazy"></div>
+          <div class="project-img"><img src="packaging.png" alt="Packaging dieline drawing" data-fallback="Packaging" loading="lazy"></div>
           <div class="project-body">
             <p class="project-tag">Duncan Enterprises, 2023 to 2025</p>
             <h3>Packaging design and time studies</h3>
@@ -314,7 +295,7 @@
       </div>
       <div class="lead-grid">
         <article class="lead-main reveal">
-          <div class="lead-img"><img src="images/swe.jpg" alt="Fresno State SWE chapter" data-fallback="SWE" loading="lazy"></div>
+          <div class="lead-img"><img src="swe.JPG" alt="Fresno State SWE chapter" data-fallback="SWE" loading="lazy"></div>
           <div>
             <p class="project-tag">Jun 2026 to May 2027</p>
             <h3>President, Society of Women Engineers</h3>
