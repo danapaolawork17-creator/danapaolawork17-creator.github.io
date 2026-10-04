@@ -1,249 +1,356 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Dana Martinez Gonzalez | Engineering Portfolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dana Martinez Gonzalez | Mechanical Engineering Portfolio</title>
+  <meta name="description" content="Mechanical engineering student at Fresno State with NASA experience in aerostructures, test engineering, and rotorcraft.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <nav class="nav">
+
+  <!-- ================= NAV ================= -->
+  <header class="nav" id="top">
     <div class="nav-inner">
-      <div class="brand">Dana Martinez Gonzalez</div>
-      <div class="nav-links">
+      <a class="brand" href="#top">Dana Martinez Gonzalez</a>
+      <button class="menu-btn" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu">
+        <span></span><span></span>
+      </button>
+      <nav class="nav-links" id="nav-links" aria-label="Main">
         <a href="#about">About</a>
-        <a href="#skills">Skills</a>
         <a href="#experience">Experience</a>
         <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-      </div>
+        <a href="#skills">Skills</a>
+        <a href="#leadership">Leadership</a>
+        <a href="#contact" class="nav-cta">Contact</a>
+      </nav>
     </div>
-  </nav>
+  </header>
 
-  <main class="container">
-    <header class="hero">
-      <h1>Dana Martinez Gonzalez</h1>
-      <p class="subtitle">Mechanical Engineering Student | Aerospace Minor | Accelerated M.S. Finish in Five</p>
-
-      <div class="buttons">
-        <a class="btn primary" href="resume.pdf" target="_blank" rel="noopener">Resume PDF</a>
-        <a class="btn" href="portfolio_dana.pdf" target="_blank" rel="noopener">Portfolio PDF</a>
-        <a class="btn" href="https://github.com/danapaolawork17-creator" target="_blank" rel="noopener">GitHub</a>
-        <a class="btn" href="https://www.linkedin.com/in/dana-martinez-gonzalez-365b59273/" target="_blank" rel="noopener">LinkedIn</a>
-        <a class="btn" href="https://fscollegian.com/2026/01/shooting-for-the-stars/" target="_blank" rel="noopener">Featured Article</a>
-      </div>
-    </header>
-
-    <section id="about" class="card">
-      <h2>About</h2>
-      <p>
-        Mechanical Engineering student in an accelerated Master’s program through the Finish in Five Program, with a minor in Aerospace Engineering.
-        Experienced in aerospace systems, rotorcraft performance, and system integration through internships at NASA.
-        Skilled in CAD, simulation, and experimental validation, with a focus on translating engineering concepts into functional designs and real-world applications.
-      </p>
-    </section>
-
-    <section id="skills" class="card">
-      <h2>Skills</h2>
-      <div class="chips">
-        <span class="chip">SolidWorks</span>
-        <span class="chip">PTC Creo</span>
-        <span class="chip">Siemens NX</span>
-        <span class="chip">ANSYS</span>
-        <span class="chip">MATLAB</span>
-        <span class="chip">Simulink</span>
-        <span class="chip">Python</span>
-        <span class="chip">C++</span>
-        <span class="chip">AutoCAD</span>
-        <span class="chip">Revit</span>
-        <span class="chip">SketchUp</span>
-        <span class="chip">ArtiosCAD</span>
-        <span class="chip">CFD</span>
-        <span class="chip">FEA</span>
-        <span class="chip">Systems Engineering</span>
-        <span class="chip">Arduino</span>
-        <span class="chip">PCB Design</span>
-        <span class="chip">RF Systems</span>
-        <span class="chip">CNC / Manual Machining</span>
-        <span class="chip">Engineering Testing MTS</span>
-      </div>
-    </section>
-
-    <section id="experience" class="card">
-      <h2>Experience</h2>
-
-      <div class="item">
-        <div class="item-top">
-          <h3>Systems Engineering Intern</h3>
-          <span class="tag">June 2026 – August 2026</span>
+  <!-- ================= HERO ================= -->
+  <section class="hero">
+    <div class="hero-grid wrap">
+      <div class="hero-text">
+        <p class="eyebrow">Mechanical Engineering, Fresno State</p>
+        <h1>I design, analyze, and test aerospace hardware.</h1>
+        <p class="hero-sub">I'm Dana, a mechanical engineering student with an aerospace minor in Fresno State's Finish in Five BS/MS program. I've worked on structures, test, and rotorcraft through three NASA internships.</p>
+        <div class="hero-buttons">
+          <a class="btn btn-primary" href="#projects">View projects</a>
+          <a class="btn btn-ghost" href="resume.pdf" target="_blank" rel="noopener">Résumé</a>
+          <a class="btn btn-ghost" href="portfolio_dana.pdf" target="_blank" rel="noopener">Portfolio PDF</a>
         </div>
-        <p><i>NASA Armstrong Flight Research Center — Quantum Sensing Technology</i></p>
-
-        <ul>
-          <li>Developing a quantum sensor prototype integrating hardware and software systems</li>
-          <li>Supporting RF, optics, and PCB-related design and testing</li>
-          <li>Contributing to CAD-based mechanical design and system integration</li>
-          <li>Collaborating with a multidisciplinary engineering team to improve system performance</li>
-        </ul>
+        <div class="hero-links">
+          <a href="https://www.linkedin.com/in/dana-martinez-gonzalez-365b59273/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://github.com/danapaolawork17-creator" target="_blank" rel="noopener">GitHub</a>
+          <a href="mailto:danapaolawork17@gmail.com">Email</a>
+        </div>
       </div>
 
-      <div class="item">
-        <div class="item-top">
-          <h3>Rotorcraft Aeromechanics Intern</h3>
-          <span class="tag">June 2025 – August 2025</span>
-        </div>
-        <p><i>NASA Ames Research Center — Rotorcraft Aeromechanics</i></p>
+      <figure class="hero-photo">
+        <!-- IMAGE: put your headshot at images/headshot.jpg -->
+        <img src="images/headshot.jpg" alt="Dana Martinez Gonzalez" data-fallback="DM">
+        <figcaption>
+          <span class="dot"></span> Currently: NASA Pathways, Aerostructures
+        </figcaption>
+      </figure>
+    </div>
 
-        <ul>
-          <li>Developed a Python-based rotor power calculator with a custom GUI using CAMRAD II data</li>
-          <li>Evaluated rotorcraft performance in forward flight through power component modeling</li>
-          <li>Automated airfoil slicing from 3D rotor blade geometry using Python and Rhino</li>
-          <li>Supported vertical flight research using CFD, aeroelastic analysis, and testing</li>
-        </ul>
+    <div class="wrap">
+      <dl class="stats">
+        <div><dt>NASA internships</dt><dd>3</dd></div>
+        <div><dt>Engineering projects</dt><dd>9</dd></div>
+        <div><dt>BS / MS expected</dt><dd>2027 / 2028</dd></div>
+        <div><dt>GPA</dt><dd>3.52</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- ================= FEATURED ================= -->
+  <div class="featured wrap reveal">
+    <span class="featured-label">Featured</span>
+    <p>The Collegian wrote about my path from community college to NASA.</p>
+    <a href="https://fscollegian.com/2026/01/shooting-for-the-stars/" target="_blank" rel="noopener">Read "Shooting for the Stars"</a>
+  </div>
+
+  <main>
+    <!-- ================= ABOUT ================= -->
+    <section id="about" class="section wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">About</p>
+        <h2>Engineering that leaves the screen</h2>
       </div>
-
-      <div class="item">
-        <div class="item-top">
-          <h3>Engineering Intern</h3>
-          <span class="tag">December 2023 – May 2025</span>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>I'm a mechanical engineering student at Fresno State in the Finish in Five program, working toward my BS with an aerospace minor (Spring 2027) and my MS (Spring 2028). I started at West Hills Community College, where I earned my AA, before transferring to the Lyles College of Engineering.</p>
+          <p>My favorite work is where analysis meets real hardware: running a thermal chamber test, watching flight data come in from the control room, or figuring out why a part behaves differently than the model said it would. I'm skilled in CAD, simulation, and experimental validation, and I like turning engineering concepts into designs that actually get built.</p>
         </div>
-        <p><i>Duncan Enterprises iLoveToCreate — Fresno, CA</i></p>
-
-        <ul>
-          <li>Created packaging specifications and engineering drawings for new product lines using SolidWorks and ArtiosCAD</li>
-          <li>Conducted time studies and data analysis to support production improvements and efficiency reporting</li>
-          <li>Wrote standardized packaging instructions and collaborated with Operations and Quality leadership</li>
-        </ul>
-      </div>
-
-      <div class="item">
-        <div class="item-top">
-          <h3>Aerodynamics Research Lead, Soil Drilling UAV</h3>
-          <span class="tag">Spring 2026 – Present</span>
-        </div>
-        <p><i>California State University, Fresno</i></p>
-
-        <ul>
-          <li>Leading aerodynamic analysis of multi-rotor UAV configurations for drilling applications</li>
-          <li>Evaluating stability, thrust distribution, and efficiency using MATLAB and CAD tools</li>
-          <li>Supporting design decisions through modeling, simulation, and experimental validation planning</li>
-        </ul>
-      </div>
-
-      <div class="item">
-        <div class="item-top">
-          <h3>Propulsion Team Member</h3>
-          <span class="tag">March 2026 – Present</span>
-        </div>
-        <p><i>NASA Student Launch Competition — California State University, Fresno</i></p>
-
-        <ul>
-          <li>Contributing to the design of an N₂O/IPA liquid bipropellant rocket engine using the Mojave Sphinx framework</li>
-          <li>Performing propulsion calculations and supporting CAD modeling in SolidWorks</li>
-          <li>Assisting with manufacturing, assembly, and static fire test preparation</li>
-        </ul>
-      </div>
-
-      <div class="item">
-        <div class="item-top">
-          <h3>Chassis and Propulsion Team Member</h3>
-          <span class="tag">November 2025 – Present</span>
-        </div>
-        <p><i>MATE ROV Competition — California State University, Fresno</i></p>
-
-        <ul>
-          <li>Designed and evaluated a six-thruster propulsion layout to enable full 6 DOF control and station keeping in flowing water</li>
-          <li>Contributed to chassis layout, thruster placement, and shroud considerations to improve stability, maneuverability, and safety</li>
-          <li>Developed tether routing and strain relief concepts to transfer loads into the chassis and protect onboard electronics</li>
+        <ul class="about-facts reveal">
+          <li><span>Focus</span>Structures, test, propulsion</li>
+          <li><span>Currently</span>NASA Armstrong, Aerostructures Branch</li>
+          <li><span>Education</span>BS + MS Mechanical Engineering, Fresno State</li>
+          <li><span>Based in</span>California's Central Valley and Antelope Valley</li>
         </ul>
       </div>
     </section>
 
-    <section id="projects" class="card">
-      <h2>Projects</h2>
+    <!-- ================= EXPERIENCE ================= -->
+    <section id="experience" class="section wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">Experience</p>
+        <h2>Where I've worked</h2>
+      </div>
 
-      <div class="grid">
-        <article class="project">
-          <h3>Rotor Power Calculator</h3>
-          <p>Python-based GUI tool for evaluating rotorcraft performance using interpolated CAMRAD II data.</p>
-          <p class="meta"><b>Tools:</b> Python, MATLAB</p>
+      <ol class="timeline">
+        <li class="job reveal">
+          <div class="job-when">Aug 2026 to Dec 2026</div>
+          <div class="job-body">
+            <h3>NASA Pathways Student Trainee</h3>
+            <p class="job-org">NASA Armstrong Flight Research Center, Aerostructures Branch</p>
+            <ul>
+              <li>Supporting X-59 QueSST structural analysis and stress evaluations</li>
+              <li>Monitoring real-time flight test data in the control room to identify anomalies</li>
+              <li>Collaborating with Lockheed Martin engineers on structural and flight test data</li>
+              <li>Writing Python scripts to process flight test and structural data more efficiently</li>
+              <li>Modeling structural components in SolidWorks and PTC Creo for design reviews</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="job reveal">
+          <div class="job-when">Jun 2026 to Aug 2026</div>
+          <div class="job-body">
+            <h3>Test Engineering Intern</h3>
+            <p class="job-org">NASA Armstrong Flight Research Center, Quantum Sensing Technology</p>
+            <ul>
+              <li>Developed a quantum sensor prototype integrating RF, optics, PCB hardware, and software</li>
+              <li>Ran thermal testing in a Thermotron environmental chamber across operating temperatures</li>
+              <li>Conducted vibration analysis and testing under flight-representative loading</li>
+              <li>Designed TEC controller logic to stabilize laser temperature for the optical subsystem</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="job reveal">
+          <div class="job-when">Jun 2025 to Aug 2025</div>
+          <div class="job-body">
+            <h3>Rotorcraft Aeromechanics Intern</h3>
+            <p class="job-org">NASA Ames Research Center</p>
+            <ul>
+              <li>Developed a Python rotor power calculator with a custom GUI using CAMRAD II data</li>
+              <li>Evaluated forward flight rotorcraft performance through power component modeling</li>
+              <li>Automated airfoil slicing from 3D rotor blade geometry using Python and Rhino</li>
+              <li>Supported vertical flight research using CFD, aeroelastic analysis, and wind tunnel testing</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="job reveal">
+          <div class="job-when">Dec 2023 to May 2025</div>
+          <div class="job-body">
+            <h3>Engineering Intern</h3>
+            <p class="job-org">Duncan Enterprises (iLoveToCreate), Fresno, CA</p>
+            <ul>
+              <li>Created packaging specifications and engineering drawings in SolidWorks and ArtiosCAD</li>
+              <li>Conducted time studies and data analysis to support production improvements</li>
+              <li>Wrote standardized packaging instructions with Operations and Quality leadership</li>
+            </ul>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ================= PROJECTS ================= -->
+    <section id="projects" class="section wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">Projects</p>
+        <h2>Selected work</h2>
+      </div>
+
+      <div class="filters" role="group" aria-label="Filter projects">
+        <button class="filter is-active" data-filter="all" aria-pressed="true">All</button>
+        <button class="filter" data-filter="nasa" aria-pressed="false">NASA</button>
+        <button class="filter" data-filter="research" aria-pressed="false">Research</button>
+        <button class="filter" data-filter="competition" aria-pressed="false">Competition</button>
+        <button class="filter" data-filter="school" aria-pressed="false">Coursework</button>
+        <button class="filter" data-filter="industry" aria-pressed="false">Industry</button>
+      </div>
+
+      <div class="project-grid">
+        <!-- To add a project: copy one <article> block, change the text,
+             set data-cat, and put the image in the images folder. -->
+
+        <article class="project reveal" data-cat="nasa">
+          <div class="project-img"><img src="images/x59.jpg" alt="X-59 aircraft" data-fallback="X-59" loading="lazy"></div>
+          <div class="project-body">
+            <p class="project-tag">NASA Armstrong, 2026</p>
+            <h3>X-59 QueSST structural analysis</h3>
+            <p>Structural analysis and stress evaluations for NASA's quiet supersonic X-59, plus real-time flight test monitoring and Python tools for processing flight data.</p>
+            <ul class="tools"><li>FEA</li><li>Python</li><li>PTC Creo</li><li>Flight test</li></ul>
+          </div>
         </article>
 
-        <article class="project">
-          <h3>Airfoil Slicing Tool</h3>
-          <p>Automated extraction of airfoil cross sections from 3D rotor blade geometries for aerodynamic analysis.</p>
-          <p class="meta"><b>Tools:</b> Python, Rhino</p>
+        <article class="project reveal" data-cat="nasa">
+          <div class="project-img"><img src="images/quantum-sensor.jpg" alt="Quantum sensor test setup" data-fallback="Sensor" loading="lazy"></div>
+          <div class="project-body">
+            <p class="project-tag">NASA Armstrong, 2026</p>
+            <h3>Quantum sensor prototype testing</h3>
+            <p>Thermal chamber and vibration testing of a quantum sensor prototype, plus TEC controller logic to hold laser temperature steady for the optics.</p>
+            <ul class="tools"><li>Thermotron</li><li>Vibration</li><li>TEC control</li><li>RF / PCB</li></ul>
+          </div>
         </article>
 
-        <article class="project">
-          <h3>Propulsion System Design — NASA Student Launch</h3>
-          <p>Contributed to the design of a liquid bipropellant rocket engine including CAD modeling, analysis, and test preparation.</p>
-          <p class="meta"><b>Tools:</b> SolidWorks, Propulsion Analysis</p>
+        <article class="project reveal" data-cat="nasa">
+          <div class="project-img"><img src="images/rotor-calculator.jpg" alt="Rotor power calculator interface" data-fallback="Rotor" loading="lazy"></div>
+          <div class="project-body">
+            <p class="project-tag">NASA Ames, 2025</p>
+            <h3>Rotor power calculator</h3>
+            <p>A Python GUI tool that evaluates rotorcraft performance using interpolated CAMRAD II power coefficient tables.</p>
+            <ul class="tools"><li>Python</li><li>GUI</li><li>CAMRAD II</li></ul>
+          </div>
         </article>
 
-        <article class="project">
-          <h3>Soil Drilling UAV Research</h3>
-          <p>Analyzing multi-rotor UAV configurations for drilling applications, including stability, thrust, and efficiency tradeoffs.</p>
-          <p class="meta"><b>Tools:</b> MATLAB, SolidWorks, Testing</p>
+        <article class="project reveal" data-cat="nasa">
+          <div class="project-img"><img src="images/airfoil-slicing.jpg" alt="Rotor blade with airfoil slices in Rhino" data-fallback="Airfoil" loading="lazy"></div>
+          <div class="project-body">
+            <p class="project-tag">NASA Ames, 2025</p>
+            <h3>Airfoil slicing tool</h3>
+            <p>Automated extraction of airfoil cross sections from 3D rotor blade geometry to speed up aerodynamic analysis.</p>
+            <ul class="tools"><li>Python</li><li>Rhino</li><li>rhinoscriptsyntax</li></ul>
+          </div>
         </article>
 
-        <article class="project">
-          <h3>MATE ROV Chassis and Propulsion</h3>
-          <p>Designed propulsion layout and chassis integration concepts for underwater vehicle control and stability.</p>
-          <p class="meta"><b>Tools:</b> SolidWorks, Mechanical Design</p>
+        <article class="project reveal" data-cat="competition">
+          <div class="project-img"><img src="images/rocket-engine.jpg" alt="Liquid rocket engine CAD model" data-fallback="Engine" loading="lazy"></div>
+          <div class="project-body">
+            <p class="project-tag">NASA Student Launch, 2026 to present</p>
+            <h3>Liquid bipropellant rocket engine</h3>
+            <p>Propulsion calculations and SolidWorks modeling for an N₂O/IPA engine built on the Mojave Sphinx framework, plus manufacturing and static fire prep.</p>
+            <ul class="tools"><li>Propulsion</li><li>SolidWorks</li><li>Static fire</li></ul>
+          </div>
+        </article>
+
+        <article class="project reveal" data-cat="research">
+          <div class="project-img"><img src="images/drilling-uav.jpg" alt="Multi-rotor soil drilling UAV" data-fallback="UAV" loading="lazy"></div>
+          <div class="project-body">
+            <p class="project-tag">Fresno State research, 2026 to present</p>
+            <h3>Soil drilling UAV aerodynamics</h3>
+            <p>Leading aerodynamic analysis of multi-rotor configurations for a drilling drone, comparing stability, thrust distribution, and efficiency.</p>
+            <ul class="tools"><li>MATLAB</li><li>SolidWorks</li><li>Test planning</li></ul>
+          </div>
+        </article>
+
+        <article class="project reveal" data-cat="competition">
+          <div class="project-img"><img src="images/rov.jpg" alt="MATE ROV with six thrusters" data-fallback="ROV" loading="lazy"></div>
+          <div class="project-body">
+            <p class="project-tag">MATE ROV, 2025 to present</p>
+            <h3>ROV chassis and propulsion</h3>
+            <p>A six-thruster layout for full 6 DOF control and station keeping in flowing water, plus tether routing and strain relief to protect the electronics.</p>
+            <ul class="tools"><li>SolidWorks</li><li>6 DOF</li><li>Mechanical design</li></ul>
+          </div>
+        </article>
+
+        <article class="project reveal" data-cat="school">
+          <div class="project-img"><img src="images/engine-mount.jpg" alt="Engine mount bracket FEA" data-fallback="Bracket" loading="lazy"></div>
+          <div class="project-body">
+            <p class="project-tag">Coursework, 2026</p>
+            <h3>Engine mount bracket analysis</h3>
+            <p>Checked a 6061 aluminum gusset engine mount against design standards for a 600 lbf load, focusing on stress concentration at a web cutout.</p>
+            <ul class="tools"><li>FEA</li><li>Hand calcs</li><li>Design standards</li></ul>
+          </div>
+        </article>
+
+        <article class="project reveal" data-cat="industry">
+          <div class="project-img"><img src="images/packaging.jpg" alt="Packaging dieline drawing" data-fallback="Packaging" loading="lazy"></div>
+          <div class="project-body">
+            <p class="project-tag">Duncan Enterprises, 2023 to 2025</p>
+            <h3>Packaging design and time studies</h3>
+            <p>Packaging specs and drawings for new product lines, plus time studies that fed into production efficiency reports.</p>
+            <ul class="tools"><li>ArtiosCAD</li><li>SolidWorks</li><li>Data analysis</li></ul>
+          </div>
         </article>
       </div>
+
+      <p class="disclaimer">NASA project images shown are publicly released or general representations.</p>
     </section>
 
-    <section id="leadership" class="card">
-      <h2>Leadership and Activities</h2>
-
-      <div class="item">
-        <div class="item-top">
-          <h3>Society of Women Engineers</h3>
-          <span class="tag">President</span>
+    <!-- ================= SKILLS ================= -->
+    <section id="skills" class="section wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">Skills</p>
+        <h2>Tools I use</h2>
+      </div>
+      <div class="skill-grid">
+        <div class="skill-card reveal">
+          <h3>CAD and design</h3>
+          <ul class="chips"><li>SolidWorks</li><li>PTC Creo</li><li>Siemens NX</li><li>AutoCAD</li><li>Rhino</li><li>ArtiosCAD</li><li>Revit</li><li>SketchUp</li></ul>
         </div>
-        <p>
-          Supporting professional development, outreach, and community building for women in engineering at Fresno State.
-        </p>
-      </div>
-
-      <div class="item">
-        <div class="item-top">
-          <h3>Society of Hispanic Professional Engineers</h3>
-          <span class="tag">Secretary</span>
+        <div class="skill-card reveal">
+          <h3>Analysis</h3>
+          <ul class="chips"><li>FEA</li><li>ANSYS</li><li>CFD</li><li>Numerical methods</li><li>Systems engineering</li><li>Controls</li></ul>
         </div>
-        <p>
-          Supporting organization communication, documentation, and student engagement within SHPE.
-        </p>
+        <div class="skill-card reveal">
+          <h3>Programming</h3>
+          <ul class="chips"><li>Python</li><li>MATLAB</li><li>Simulink</li><li>C++</li></ul>
+        </div>
+        <div class="skill-card reveal">
+          <h3>Test and hardware</h3>
+          <ul class="chips"><li>Thermotron chambers</li><li>Vibration testing</li><li>MTS testing</li><li>Data acquisition</li><li>Instrumentation</li><li>RF systems</li><li>PCB design</li><li>Arduino</li><li>Soldering</li></ul>
+        </div>
+        <div class="skill-card reveal">
+          <h3>Manufacturing</h3>
+          <ul class="chips"><li>CNC machining</li><li>Manual machining</li></ul>
+        </div>
       </div>
     </section>
 
-    <section id="contact" class="card">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:danapaolawork17@gmail.com">danapaolawork17@gmail.com</a></p>
-      <p>
-        LinkedIn:
-        <a href="https://www.linkedin.com/in/dana-martinez-gonzalez-365b59273/" target="_blank" rel="noopener">
-          linkedin.com/in/dana-martinez-gonzalez-365b59273
-        </a>
-      </p>
-      <p>
-        GitHub:
-        <a href="https://github.com/danapaolawork17-creator" target="_blank" rel="noopener">
-          github.com/danapaolawork17-creator
-        </a>
-      </p>
+    <!-- ================= LEADERSHIP ================= -->
+    <section id="leadership" class="section wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">Leadership</p>
+        <h2>Beyond the classroom</h2>
+      </div>
+      <div class="lead-grid">
+        <article class="lead-main reveal">
+          <div class="lead-img"><img src="images/swe.jpg" alt="Fresno State SWE chapter" data-fallback="SWE" loading="lazy"></div>
+          <div>
+            <p class="project-tag">Jun 2026 to May 2027</p>
+            <h3>President, Society of Women Engineers</h3>
+            <p>I lead seven chapter officers across programming, professional development, and K-14 outreach. I also direct our WE26 national conference sponsorship campaign, from corporate outreach to a tiered sponsorship packet, to fund student travel to Boston.</p>
+          </div>
+        </article>
+        <div class="lead-side">
+          <div class="lead-item reveal"><h3>SHPE</h3><p>Former Secretary, Society of Hispanic Professional Engineers</p></div>
+          <div class="lead-item reveal"><h3>AIAA</h3><p>Member, American Institute of Aeronautics and Astronautics</p></div>
+          <div class="lead-item reveal"><h3>Mentor</h3><p>Mentoring first-year engineering students</p></div>
+          <div class="lead-item reveal"><h3>Grader</h3><p>ME 112 Dynamics, Fall 2026</p></div>
+        </div>
+      </div>
     </section>
 
-    <footer class="footer">
-      <p>© <span id="year"></span> Dana Martinez Gonzalez</p>
-    </footer>
+    <!-- ================= CONTACT ================= -->
+    <section id="contact" class="contact">
+      <div class="wrap reveal">
+        <p class="eyebrow">Contact</p>
+        <h2>Let's build something.</h2>
+        <p>I'm open to internships and full-time roles in structures, testing, propulsion, and hardware.</p>
+        <a class="contact-email" href="mailto:danapaolawork17@gmail.com">danapaolawork17@gmail.com</a>
+        <div class="hero-links">
+          <a href="https://www.linkedin.com/in/dana-martinez-gonzalez-365b59273/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://github.com/danapaolawork17-creator" target="_blank" rel="noopener">GitHub</a>
+          <a href="resume.pdf" target="_blank" rel="noopener">Résumé</a>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+  <footer class="footer wrap">
+    <p>© <span id="year"></span> Dana Martinez Gonzalez</p>
+    <a href="#top">Back to top</a>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
