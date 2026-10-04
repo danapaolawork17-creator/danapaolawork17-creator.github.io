@@ -9,6 +9,20 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <style>
+    /* Recognition cards and project report links */
+    .rec-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.5rem; }
+    .rec-card {
+      background: var(--surface, #fff); border: 1px solid var(--line, #DDE3E9); border-radius: var(--radius, 14px);
+      padding: 1.6rem; display: flex; flex-direction: column; border-top: 4px solid var(--hot, #E0531F);
+    }
+    .rec-type { font-family: var(--head, Arial, sans-serif); font-weight: 600; font-size: 0.85rem; color: var(--hot, #E0531F); margin-bottom: 0.5rem; }
+    .rec-card h3 { font-size: 1.2rem; margin-bottom: 0.7rem; }
+    .rec-card p:not(.rec-type) { color: var(--muted, #5A6675); font-size: 0.97rem; margin-bottom: 1.2rem; }
+    .rec-card a, .project-link { margin-top: auto; font-weight: 600; color: var(--accent, #1D5F8A); text-underline-offset: 4px; }
+    .project-link { display: inline-block; padding-top: 1rem; }
+    .project-body > p + p { margin-top: 0.7rem; }
+  </style>
 </head>
 <body>
 
@@ -62,7 +76,7 @@
     <div class="wrap">
       <dl class="stats">
         <div><dt>NASA internships</dt><dd>3</dd></div>
-        <div><dt>Engineering projects</dt><dd>7</dd></div>
+        <div><dt>Engineering projects</dt><dd>8</dd></div>
         <div><dt>BS / MS expected</dt><dd>2027 / 2028</dd></div>
         <div><dt>GPA</dt><dd>3.52</dd></div>
       </dl>
@@ -174,6 +188,7 @@
         <button class="filter is-active" data-filter="all" aria-pressed="true">All</button>
         <button class="filter" data-filter="nasa" aria-pressed="false">NASA</button>
         <button class="filter" data-filter="competition" aria-pressed="false">Competition</button>
+        <button class="filter" data-filter="school" aria-pressed="false">Coursework</button>
         <button class="filter" data-filter="industry" aria-pressed="false">Industry</button>
       </div>
 
@@ -240,6 +255,18 @@
             <h3>Engine mount bracket analysis</h3>
             <p>Checked a 6061 aluminum gusset engine mount against design standards for a 1600 lbf load, focusing on stress concentration at a web cutout.</p>
             <ul class="tools"><li>FEA</li><li>Hand calcs</li><li>Design standards</li></ul>
+          </div>
+        </article>
+
+        <article class="project reveal" data-cat="school">
+          <div class="project-img"><img src="gearbox-fea.png" alt="FEA stress results for the gearbox assembly" data-fallback="Gearbox" loading="lazy"></div>
+          <div class="project-body">
+            <p class="project-tag">ME 154, Fresno State, Spring 2026</p>
+            <h3>Double reduction spur gear speed reducer</h3>
+            <p>With a team of five, I designed a two-stage gearbox for a commercial tractor that takes 6 hp at 2000 rpm down to 180 rpm, an 11.1:1 reduction split into two 3.33:1 stages (30 and 100 tooth gears).</p>
+            <p>We sized the gears with AGMA bending and contact stress analysis and the shafts with DE-Goodman fatigue criteria in MATLAB, targeting a 1.5 safety factor, infinite shaft life, and 5,000 hours on the gears and bearings. The design uses AISI 1045 steel gears and shafts, needle roller bearings, and a 6061-T6 aluminum housing. We modeled the full assembly in SolidWorks and checked it with FEA in both SolidWorks and Autodesk Inventor, then compared the results against our hand calculations.</p>
+            <ul class="tools"><li>SolidWorks</li><li>Inventor FEA</li><li>MATLAB</li><li>AGMA</li><li>Shaft fatigue</li></ul>
+            <a class="project-link" href="gearbox-report.pdf" target="_blank" rel="noopener">Read the full report</a>
           </div>
         </article>
 
@@ -318,35 +345,28 @@
         <p class="eyebrow">Recognition</p>
         <h2>Awards and press</h2>
       </div>
+      <!-- To add another award or story: copy one <article class="rec-card"> block -->
       <div class="rec-grid">
-        <div>
-          <h3 class="rec-heading">Scholarships and awards</h3>
-          <!-- To add another award: copy one <a class="rec-card"> block -->
-          <a class="rec-card reveal" href="https://www.fresnowomensnetwork.com/scholarships" target="_blank" rel="noopener">
-            <span class="rec-year">2026</span>
-            <span class="rec-body">
-              <strong>Fresno Women's Network Educational Scholarship</strong>
-              <span>Awarded for scholastic merit, community involvement, and career goals. Presented at the May 2026 FWN luncheon.</span>
-            </span>
-          </a>
-        </div>
-        <div>
-          <h3 class="rec-heading">In the news</h3>
-          <a class="rec-card reveal" href="https://www.yourcentralvalley.com/digital-enterprise/immigrant-woman-in-stem-achieves-nasa-internship/" target="_blank" rel="noopener">
-            <span class="rec-year">News</span>
-            <span class="rec-body">
-              <strong>Immigrant woman in STEM achieves NASA internship</strong>
-              <span>YourCentralValley.com</span>
-            </span>
-          </a>
-          <a class="rec-card reveal" href="https://fscollegian.com/2026/01/shooting-for-the-stars/" target="_blank" rel="noopener">
-            <span class="rec-year">2026</span>
-            <span class="rec-body">
-              <strong>Shooting for the Stars</strong>
-              <span>The Collegian, Fresno State</span>
-            </span>
-          </a>
-        </div>
+        <article class="rec-card reveal">
+          <p class="rec-type">Scholarship, 2026</p>
+          <h3>Fresno Women's Network Educational Scholarship</h3>
+          <p>Awarded by the Fresno Women's Network to Central Valley students based on scholastic merit, community involvement, and career goals. I was selected after an interview with the scholarship committee and recognized at the May 2026 FWN luncheon.</p>
+          <a href="https://www.fresnowomensnetwork.com/scholarships" target="_blank" rel="noopener">View recipients</a>
+        </article>
+
+        <article class="rec-card reveal">
+          <p class="rec-type">News feature</p>
+          <h3>Immigrant woman in STEM achieves NASA internship</h3>
+          <p>YourCentralValley.com shared my story of coming to the U.S. as a teenager and working my way from community college to an internship at NASA.</p>
+          <a href="https://www.yourcentralvalley.com/digital-enterprise/immigrant-woman-in-stem-achieves-nasa-internship/" target="_blank" rel="noopener">Read the story</a>
+        </article>
+
+        <article class="rec-card reveal">
+          <p class="rec-type">Student press, 2026</p>
+          <h3>Shooting for the Stars</h3>
+          <p>The Collegian, Fresno State's student newspaper, profiled my path through engineering at Fresno State and my work with NASA.</p>
+          <a href="https://fscollegian.com/2026/01/shooting-for-the-stars/" target="_blank" rel="noopener">Read the article</a>
+        </article>
       </div>
     </section>
 
