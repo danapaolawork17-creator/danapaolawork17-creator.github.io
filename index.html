@@ -99,8 +99,8 @@
       </div>
       <div class="about-grid">
         <div class="about-text reveal">
-          <p>I'm a mechanical engineering student at Fresno State in the Finish in Five program, working toward my BS with an aerospace minor (Fall 2027) and my MS (Fall 2028). I started at West Hills Community College, where I earned my AA, before transferring to the Lyles College of Engineering.</p>
-          <p>My favorite work is where analysis meets real hardware: running a thermal chamber test, watching flight data come in from the control room, or figuring out why a part behaves differently than the model said it would. I'm skilled in CAD, simulation, and experimental validation, and I like turning engineering concepts into designs that actually get built.</p>
+          <p>I'm a mechanical engineering student at Fresno State in the Finish in Five program, working toward my BS with an aerospace minor (Spring 2027) and my MS (Spring 2028). I started at West Hills Community College, where I earned my AA, before transferring to the Lyles College of Engineering.</p>
+          <p>My favorite work is where analysis meets real hardware: sizing a TEC to keep a laser from overheating, taking a part from a 3D print to a machined piece, or watching loads data come in from the control room during a flight. Right now I'm running stress analysis on a modified X-59 engine mount that I'll help test in the Flight Loads Lab.</p>
         </div>
         <ul class="about-facts reveal">
           <li><span>Focus</span>Structures, testing, hardware, propulsion</li>
@@ -125,11 +125,10 @@
             <h3>NASA Pathways Student Trainee</h3>
             <p class="job-org">NASA Armstrong Flight Research Center, Aerostructures Branch</p>
             <ul>
-              <li>Supporting X-59 QueSST structural analysis and stress evaluations</li>
-              <li>Monitoring real-time flight test data in the control room to identify anomalies</li>
-              <li>Collaborating with Lockheed Martin engineers on structural and flight test data</li>
-              <li>Writing Python scripts to process flight test and structural data more efficiently</li>
-              <li>Modeling structural components in SolidWorks and PTC Creo for design reviews</li>
+              <li>Analyze flight loads for the X-59 QueSST alongside Lockheed Martin engineers, supporting a quiet supersonic aircraft built to help lift the ban on supersonic flight over land</li>
+              <li>Ran stress analysis on a modified X-59 engine mount and am preparing a Flight Loads Lab test to validate it before the next phase of flight testing</li>
+              <li>Built a CAD assembly for a TG-14 antenna supporting X-59 Phase 2 using SolidWorks and PTC Creo</li>
+              <li>Monitor real-time loads data in the control room during flight tests and write Python scripts to process flight test and structural data</li>
             </ul>
           </div>
         </li>
@@ -140,10 +139,10 @@
             <h3>Test Engineering Intern</h3>
             <p class="job-org">NASA Armstrong Flight Research Center, Quantum Sensing Technology</p>
             <ul>
-              <li>Developed a quantum sensor prototype integrating RF, optics, PCB hardware, and software</li>
-              <li>Ran thermal testing in a Thermotron environmental chamber across operating temperatures</li>
-              <li>Conducted vibration analysis and testing under flight-representative loading</li>
-              <li>Designed TEC controller logic to stabilize laser temperature for the optical subsystem</li>
+              <li>Designed the thermal stack for a quantum sensor's 532 nm laser (TEC, copper heat spreader, aluminum optics plate), selecting a 75 W TEC to handle the laser's 12 W max heat load</li>
+              <li>Designed a laser chassis in PTC Creo, validated fit with 3D-printed prototypes, and prepared the model for machining before ordering through Xometry</li>
+              <li>Selected LORD HT0-2 vibration isolators with a 22 Hz natural frequency, keeping resonance below the 150 to 1,000 Hz energy band of a 17.1 Grms flight vibration profile</li>
+              <li>Co-wrote the random vibration test procedure covering 3 axes, isolated and hard-mounted configurations, and a six-level ramp to 17.1 Grms</li>
             </ul>
           </div>
         </li>
@@ -200,9 +199,9 @@
           <div class="project-img"><img src="x59.JPG" alt="X-59 aircraft" data-fallback="X-59" loading="lazy"></div>
           <div class="project-body">
             <p class="project-tag">NASA Armstrong, 2026</p>
-            <h3>X-59 QueSST structural analysis</h3>
-            <p>Structural analysis and stress evaluations for NASA's quiet supersonic X-59, plus real-time flight test monitoring and Python tools for processing flight data.</p>
-            <ul class="tools"><li>FEA</li><li>Python</li><li>PTC Creo</li><li>Flight test</li></ul>
+            <h3>X-59 QueSST flight loads</h3>
+            <p>Flight loads work on NASA's quiet supersonic X-59: stress analysis on a modified engine mount headed for Flight Loads Lab testing, a TG-14 antenna CAD assembly for Phase 2, and loads monitoring from the control room during flight tests.</p>
+            <ul class="tools"><li>Stress analysis</li><li>FEA</li><li>PTC Creo</li><li>Python</li><li>Flight test</li></ul>
           </div>
         </article>
 
@@ -210,9 +209,10 @@
           <div class="project-img"><img src="quantum-sensor.png" alt="Quantum sensor test setup" data-fallback="Sensor" loading="lazy"></div>
           <div class="project-body">
             <p class="project-tag">NASA Armstrong, 2026</p>
-            <h3>Quantum sensor prototype testing</h3>
-            <p>Thermal chamber and vibration testing of a quantum sensor prototype, plus TEC controller logic to hold laser temperature steady for the optics.</p>
-            <ul class="tools"><li>Thermotron</li><li>Vibration</li><li>TEC control</li><li>RF / PCB</li></ul>
+            <h3>Laser thermal and vibration design</h3>
+            <p>The laser in a quantum sensor prototype overheats past 40 °C, so I designed a thermal stack to pull heat away: a TEC with 6x margin over the laser's 12 W heat load, feeding a copper heat spreader and an aluminum optics plate.</p>
+            <p>I also designed the laser chassis in Creo, took it from 3D-printed fit checks to a machined part, and selected the vibration isolators so the sensor could handle flight-like vibration.</p>
+            <ul class="tools"><li>PTC Creo</li><li>Thermal design</li><li>TEC sizing</li><li>Vibration isolation</li><li>3D printing</li></ul>
           </div>
         </article>
 
@@ -297,7 +297,7 @@
         </div>
         <div class="skill-card reveal">
           <h3>Analysis</h3>
-          <ul class="chips"><li>FEA</li><li>ANSYS</li><li>CFD</li><li>Numerical methods</li><li>Systems engineering</li><li>Controls</li></ul>
+          <ul class="chips"><li>Stress analysis</li><li>Flight loads</li><li>FEA</li><li>ANSYS</li><li>CFD</li><li>Numerical methods</li><li>Systems engineering</li><li>Controls</li></ul>
         </div>
         <div class="skill-card reveal">
           <h3>Programming</h3>
@@ -305,11 +305,11 @@
         </div>
         <div class="skill-card reveal">
           <h3>Test and hardware</h3>
-          <ul class="chips"><li>Thermotron chambers</li><li>Vibration testing</li><li>MTS testing</li><li>Data acquisition</li><li>Instrumentation</li><li>RF systems</li><li>PCB design</li><li>Arduino</li><li>Soldering</li></ul>
+          <ul class="chips"><li>Thermal management</li><li>Vibration isolation</li><li>Thermotron chambers</li><li>Vibration testing</li><li>TEC controllers</li><li>MTS testing</li><li>Data acquisition</li><li>Instrumentation</li><li>RF systems</li><li>PCB design</li><li>Arduino</li><li>Soldering</li></ul>
         </div>
         <div class="skill-card reveal">
           <h3>Manufacturing</h3>
-          <ul class="chips"><li>CNC machining</li><li>Manual machining</li></ul>
+          <ul class="chips"><li>CNC machining</li><li>Manual machining</li><li>3D printing</li><li>Design for manufacturing</li></ul>
         </div>
       </div>
     </section>
